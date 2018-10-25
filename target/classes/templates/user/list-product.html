@@ -37,17 +37,20 @@
                                             <div class="product-block product-resize m-b-20 fixheight" style="height: 295px;">
                                                 <div class="product-image image-resize" style="height: 208px;">
                                                     <div class="sold-out">Hot</div>
-                                                    <a th:href="@{'/users/products/detail/' + ${item.productId}}">
+                                                    <a href="#">
                                                         <img class="first-img" th:src="@{'/images/product/' + ${item.imageUrl}}">
                                                     </a>
-                                                    <div class="product-actions hidden-xs">
+<!--                                                    <a th:href="@{'/users/products/detail/' + ${item.productId}}">
+                                                        <img class="first-img" th:src="@{'/images/product/' + ${item.imageUrl}}">
+                                                    </a>-->
+<!--                                                    <div class="product-actions hidden-xs">
                                                         <div class="btn-add-to-cart" th:proid="${item.productId}" th:proname="${item.productName}" th:quantity="1" th:price="${item.sellPrice}" th:proimg="'/images/product/' +${#strings.trim(item.imageUrl)}">
                                                             <a href="javascript:void(0);"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
                                                         </div>
                                                         <div class="btn_quickview">
                                                             <a class="quickview" th:href="@{'/users/products/detail/' + ${item.productId}}"><i class="fa fa-eye"></i></a>
                                                         </div>
-                                                    </div>
+                                                    </div>-->
                                                 </div>
                                                 <div class="product-info text-center m-t-xxs-20">
                                                     <h3 class="pro-name">

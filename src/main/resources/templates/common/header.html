@@ -248,7 +248,7 @@
                                         <li class="level0"><a class='' th:href="@{/users/}"><span>Trang chủ</span></a></li>
                                         <li class="level0"><a class='' th:href="@{/users/introduction}"><span>Giới thiệu</span></a></li>
                                         <li class="level0"><a class='' th:href="@{/users/products/list-all}"><span>Sản phẩm</span></a></li>
-                                        <li class="level0"><a class='' th:href="@{/users/blog}"><span>Blog</span></a></li>
+                                        <!--                                        <li class="level0"><a class='' th:href="@{/users/blog}"><span>Blog</span></a></li>-->
                                         <li class="level0"><a class='' th:href="@{/users/contact}"><span>Liên hệ</span></a></li>
                                     </ul>
                                 </div>
@@ -325,10 +325,13 @@
                                         <a class='' th:href="@{/users/introduction}"><span>Giới thiệu</span></a>
                                     </li>
                                     <li class="level0">
-                                        <a class='' th:href="@{/users/products/list-all}"><span>Sản phẩm</span></a>
+                                        <a class='' href="#"><span>Sản phẩm</span></a>
+<!--                                        <a class='' th:href="@{/users/products/list-all}"><span>Sản phẩm</span></a>-->
                                     </li>
                                     <li class="level0">
-                                        <a class='' th:href="@{/users/blog}"><span>Blog</span></a>
+                                        <!--                                        <a class='' th:href="@{/users/blog}"><span>Blog</span></a>-->
+                                        <a class='' href="#"><span>Blog</span></a>
+
                                     </li>
                                     <li class="level0">
                                         <a class='' th:href="@{/users/contact}"><span>Liên hệ</span></a>
@@ -343,13 +346,13 @@
 
             <script type="text/javascript">
                 $(document).ready(function () {
-                var str = location.href.toLowerCase();
-                $("ul.menu li a").each(function () {
-                if (str.indexOf(this.href.toLowerCase()) >= 0) {
-                $("ul.menu li").removeClass("active");
-                $(this).parent().addClass("active");
-                }
-                });
+                    var str = location.href.toLowerCase();
+                    $("ul.menu li a").each(function () {
+                        if (str.indexOf(this.href.toLowerCase()) >= 0) {
+                            $("ul.menu li").removeClass("active");
+                            $(this).parent().addClass("active");
+                        }
+                    });
                 });
             </script>
         </div>

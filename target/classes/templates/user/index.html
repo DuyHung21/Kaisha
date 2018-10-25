@@ -110,22 +110,25 @@
                                             <div class="product-block product-resize">
                                                 <div class="product-image image-resize">
                                                     <div class="sold-out">Hot</div>
-                                                    <a th:href="@{'/users/products/detail/' + ${item.productId}}">
+                                                    <a href="#">
                                                         <img class="first-img" th:src="@{'/images/product/' + ${#strings.trim(item.imageUrl)}}">
                                                     </a>
-                                                    <div class="product-actions hidden-xs">
+<!--                                                    <a th:href="@{'/users/products/detail/' + ${item.productId}}">
+                                                        <img class="first-img" th:src="@{'/images/product/' + ${#strings.trim(item.imageUrl)}}">
+                                                    </a>-->
+<!--                                                    <div class="product-actions hidden-xs">
                                                         <div class="btn-add-to-cart" th:proid="${item.productId}" th:proname="${item.productName}" th:quantity="1" th:price="${item.sellPrice}" th:proimg="'/images/product/' +${#strings.trim(item.imageUrl)}">
                                                             <a href="javascript:void(0);"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
                                                         </div>
                                                         <div class="btn_quickview">
                                                             <a class="quickview" th:href="@{'/users/products/detail/' + ${item.productId}}"><i class="fa fa-eye"></i></a>
                                                         </div>                                                          
-                                                    </div>
+                                                    </div>-->
                                                 </div>
                                                 <div class="product-info text-center m-t-xxs-20">
-                                                    <h3 class="pro-name">
+<!--                                                    <h3 class="pro-name">
                                                         <a th:href="@{'/users/products/detail/' + ${item.productId}}" th:text="${item.productName}"></a>
-                                                    </h3>
+                                                    </h3>-->
                                                     <div class="pro-prices">
                                                         <span class="pro-price" th:text="${#numbers.formatDecimal(item.sellPrice, 0, 'COMMA', 2, 'POINT')}"></span><span class="pro-price">₫</span>
                                                     </div>
@@ -161,22 +164,25 @@
                                             <div class="product-block product-resize">
                                                 <div class="product-image image-resize">
                                                     <div class="sold-out">Hot</div>
-                                                    <a th:href="@{'/users/products/detail/' + ${item.productId}}">
+                                                    <a href="#">
                                                         <img class="first-img" th:src="@{'/images/product/' + ${item.imageUrl}}" alt="${item.productName}">
                                                     </a>
-                                                    <div class="product-actions hidden-xs">
+<!--                                                    <a th:href="@{'/users/products/detail/' + ${item.productId}}">
+                                                        <img class="first-img" th:src="@{'/images/product/' + ${item.imageUrl}}" alt="${item.productName}">
+                                                    </a>-->
+<!--                                                    <div class="product-actions hidden-xs">
                                                         <div class="btn-add-to-cart" th:proid="${item.productId}" th:proname="${item.productName}" th:quantity="1" th:price="${item.sellPrice}" th:proimg="'/images/product/' +${#strings.trim(item.imageUrl)}">
                                                             <a href="javascript:void(0);"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
                                                         </div>
                                                         <div class="btn_quickview">
                                                             <a class="quickview" th:href="@{'/users/products/detail/' + ${item.productId}}"><i class="fa fa-eye"></i></a>
                                                         </div>
-                                                    </div>
+                                                    </div>-->
                                                 </div>
                                                 <div class="product-info text-center m-t-xxs-20">
-                                                    <h3 class="pro-name">
+<!--                                                    <h3 class="pro-name">
                                                         <a th:href="@{'/users/products/detail/' + ${item.productId}}" th:text="${item.productName}"></a>
-                                                    </h3>
+                                                    </h3>-->
                                                     <div class="pro-prices">
                                                         <span class="pro-price" th:text="${#numbers.formatDecimal(item.sellPrice, 0, 'COMMA', 2, 'POINT')}"></span><span class="pro-price">₫</span>
                                                     </div>
@@ -210,23 +216,26 @@
                                             <div class="product-block product-resize">
                                                 <div class="product-image image-resize">
                                                     <div class="sold-out">Hot</div>
-                                                    <a th:href="@{'/users/products/detail/' + ${item.productId}}">
+                                                    <a href="#">
                                                         <img class="first-img" th:src="@{'/images/product/' + ${item.imageUrl}}" alt="${item.productName}">
                                                     </a>
-                                                    <div class="product-actions hidden-xs">
+<!--                                                    <a th:href="@{'/users/products/detail/' + ${item.productId}}">
+                                                        <img class="first-img" th:src="@{'/images/product/' + ${item.imageUrl}}" alt="${item.productName}">
+                                                    </a>-->
+<!--                                                    <div class="product-actions hidden-xs">
                                                         <div class="btn-add-to-cart" th:proid="${item.productId}" th:proname="${item.productName}" th:quantity="1" th:price="${item.sellPrice}" th:proimg="'/images/product/' +${#strings.trim(item.imageUrl)}">
                                                             <a href="javascript:void(0);"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
                                                         </div>
                                                         <div class="btn_quickview">
                                                             <a class="quickview" th:href="@{'/users/products/detail/' + ${item.productId}}"><i class="fa fa-eye"></i></a>
                                                         </div>
-                                                    </div>
+                                                    </div>-->
                                                 </div>
                                                 <div class="product-info text-center m-t-xxs-20">
-                                                    <h3 class="pro-name">
+<!--                                                    <h3 class="pro-name">
                                                         <a th:href="@{'/users/products/detail/' + ${item.productId}}" th:text="${item.productName}"></a>
                                                     </h3>
-                                                    <div class="pro-prices">
+                                                    <div class="pro-prices">-->
                                                         <span class="pro-price" th:text="${#numbers.formatDecimal(item.sellPrice, 0, 'COMMA', 2, 'POINT')}"></span><span class="pro-price">₫</span>
                                                     </div>
                                                 </div>
@@ -251,7 +260,7 @@
                         <div class="col-md-12">
 
                             <!--Blog-->
-                            <section id="blog_index" class="container m-b-20">
+<!--                            <section id="blog_index" class="container m-b-20">
                                 <div class="row">
                                     <div class="col-md-12 col-xs-12">
                                         <div class="section-heading">
@@ -290,7 +299,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </section>
+                            </section>-->
                             <!--EndBlog-->
                         </div>
                     </div>
