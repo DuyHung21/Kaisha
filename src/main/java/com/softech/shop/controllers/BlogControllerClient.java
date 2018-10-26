@@ -35,13 +35,5 @@ public class BlogControllerClient {
         model.addAttribute("blogs", blogService.findAll());
         model.addAttribute("blogSidebar", blogService.findByTop(5));
         return "/user/blog";
-    }
-    
-    @GetMapping("/blog/detail")
-    public String details(ModelMap modelMap,@RequestParam("id")String id){
-        modelMap.addAttribute("categories", categoryService.findAll());
-        modelMap.addAttribute("blogItem",blogService.findById(Integer.parseInt(id)));
-        return "/user/blog-detail";
-    }
-    
+    }   
 }

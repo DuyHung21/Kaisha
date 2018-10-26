@@ -78,35 +78,5 @@ public class HomeControllerClient {
     public String introduction(Model model) {
         model.addAttribute("categories", categoryService.findAll());
         return "/user/introduction";
-    }
-
-    @GetMapping("/return")
-    public String returnProduct(Model model){
-        model.addAttribute("categories", categoryService.findAll());
-        return "/user/return";
-    }
-    
-    @GetMapping("/security")
-    public String security(Model model){
-        model.addAttribute("categories", categoryService.findAll());
-        return "/user/security";
-    }
-    
-    @GetMapping("/shopping-guide")
-    public String shoppingGuide(Model model){
-        model.addAttribute("categories", categoryService.findAll());
-        return "/user/shopping-guide";
-    }
-    
-    @GetMapping("/payment-guide")
-    public String paymentGuide(Model model){
-        model.addAttribute("categories", categoryService.findAll());
-        return "/user/payment-guide";
-    }
-    
-    @GetMapping("/trading-account")
-    public String tradingAccount(Model model){
-        model.addAttribute("categories", categoryService.findAll());
-        return "/user/trading-account";
-    }
+    } 
 }
