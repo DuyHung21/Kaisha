@@ -10,9 +10,9 @@ import com.softech.shop.model.Customers;
 import com.softech.shop.model.Orders;
 import com.softech.shop.services.CategoryService;
 import com.softech.shop.services.CustomerService;
-import com.softech.shop.services.NotificationService;
-import com.softech.shop.services.OrderDetailService;
-import com.softech.shop.services.OrderService;
+//import com.softech.shop.services.NotificationService;
+//import com.softech.shop.services.OrderDetailService;
+//import com.softech.shop.services.OrderService;
 import com.softech.shop.view_model.ChangePasswordViewModel;
 import com.softech.shop.view_model.CustomerViewModel;
 import java.util.List;
@@ -43,14 +43,14 @@ public class CustomerControllerClient {
     @Autowired
     private CategoryService categoryService;
 
-    @Autowired
-    private NotificationService notificationService;
-
-    @Autowired
-    private OrderService orderService;
-
-    @Autowired
-    private OrderDetailService orderDetailService;
+//    @Autowired
+//    private NotificationService notificationService;
+//
+//    @Autowired
+//    private OrderService orderService;
+//
+//    @Autowired
+//    private OrderDetailService orderDetailService;
 
     @GetMapping("/customer/register")
     public String registerForm(Model model) {
@@ -109,11 +109,11 @@ public class CustomerControllerClient {
             customers.setTotalMoney(0L);
 
             customerService.save(customers);
-            try {
-                notificationService.sendMailForNewCustomer(customers);
-            } catch (MailException ex) {
-                System.out.println(ex.getMessage());
-            }
+//            try {
+//                notificationService.sendMailForNewCustomer(customers);
+//            } catch (MailException ex) {
+//                System.out.println(ex.getMessage());
+//            }
             session.setAttribute("userName", customers.getCustomerName());
             session.setAttribute("customerId", customers.getCustomerId());
             return "redirect:/users/";

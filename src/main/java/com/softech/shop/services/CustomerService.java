@@ -15,19 +15,9 @@ import java.util.Optional;
  */
 public interface CustomerService {
 
-    
-    List<Customers> findAll();
-
-    Optional<Customers> findById(Integer id);
-
     Customers save(Customers cus);
 
-    void deleteById(Integer id);
-
-    
     Customers findByEmail(String email);
-    
-//    Customers findById(int customerId);
-    
+
     List<String> listEmail();
 }

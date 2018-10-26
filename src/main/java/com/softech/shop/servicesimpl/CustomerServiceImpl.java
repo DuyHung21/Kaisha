@@ -28,36 +28,15 @@ public class CustomerServiceImpl implements CustomerService {
      * @return
      */
     @Override
-    public List<Customers> findAll() {
-        return (List<Customers>) customerRepository.findAll();
-    }
-
-    @Override
-    public Optional<Customers> findById(Integer id) {
-        return customerRepository.findById(id);
-    }
-
-    @Override
     public Customers save(Customers cus) {
         return customerRepository.save(cus);
-        
-    }
 
-    @Override
-    public void deleteById(Integer id) {
-        customerRepository.deleteById(id);
     }
-
 
     @Override
     public Customers findByEmail(String email) {
         return customerRepository.findByEmail(email);
     }
-
-//    @Override
-//    public Customers findById(int customerId) {
-//        return customerRepository.findById(customerId).get();
-//    }
 
     @Override
     public List<String> listEmail() {

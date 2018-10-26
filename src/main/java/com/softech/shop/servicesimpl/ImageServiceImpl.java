@@ -20,44 +20,45 @@ import com.softech.shop.services.ImageService;
  * @author Nguyen Tri
  */
 @Service
-public class ImageServiceImpl implements ImageService{
-	@Autowired
-	private ImageRepository imageRepository;
+public class ImageServiceImpl implements ImageService {
 
-	@Override
-	public List<Images> findAll() {
-		return (List<Images>) imageRepository.findAll();
-	}
+    @Autowired
+    private ImageRepository imageRepository;
 
-	@Override
-	public Images save(Images p) {
-		return imageRepository.save(p);
-	}
+    @Override
+    public List<Images> findAll() {
+        return (List<Images>) imageRepository.findAll();
+    }
 
-	@Override
-	public List<Images> findByName(String name) {
-		return (List<Images>) ((ImageService) imageRepository).findByName(name);
-	}
+    @Override
+    public Images save(Images p) {
+        return imageRepository.save(p);
+    }
 
-	@Override
-	public List<Images> findByProductId(Integer id) {
-		return imageRepository.findByProductId(id);
-	}
+    @Override
+    public List<Images> findByName(String name) {
+        return (List<Images>) ((ImageService) imageRepository).findByName(name);
+    }
 
-	@Override
-	public void deleteByProductId(Integer id) {
-		imageRepository.deleteByProductId(id);
-	}
+    @Override
+    public List<Images> findByProductId(Integer id) {
+        return imageRepository.findByProductId(id);
+    }
 
-	@Override
-	public Optional<Images> findById(Integer id) {
-		return imageRepository.findById(id);
-	}
+    @Override
+    public void deleteByProductId(Integer id) {
+        imageRepository.deleteByProductId(id);
+    }
 
-	@Override
-	public void deleteById(Integer id) {
-		imageRepository.deleteById(id);
-	}   
+    @Override
+    public Optional<Images> findById(Integer id) {
+        return imageRepository.findById(id);
+    }
+
+    @Override
+    public void deleteById(Integer id) {
+        imageRepository.deleteById(id);
+    }
 
     @Override
     public Images findByProduct(int productId) {
